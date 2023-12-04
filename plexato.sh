@@ -292,7 +292,7 @@ while true; do
                         echo_ts "[INFO] $msg_info Overlay removal required. Restoring original poster."
                         python_function restore_poster "$imdb_id"
                         if [[ $RESET_ADDEDAT == true ]]; then
-                            sleep 1
+                            sleep 3
                             python_function reset_addedat "$imdb_id"
                         fi
                     # If newer movie requires a different overlay than the current custom overlay that it is using, then apply the new overlay.    
